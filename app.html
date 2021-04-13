@@ -60,7 +60,42 @@
 
   <!-- Begin page content -->
   <main role="main" class="container">
-    <!-- Add HTML later -->
+    <!-- Title -->
+
+    <div class="row">
+      <div class="col">
+        <h1>Enter a string to be reversed</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <form">
+          <div class="form-group">
+            <input
+              type="text"
+              name=""
+              id="tacoCat"
+              placeholder="Please enter two or more letters"
+              class="form-control"
+            />
+          </div>
+          <div class="form-group">
+            <button class="form-control btn btn-warning" type="button" id="tacoBtn">
+              Flip the String
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Output -->
+    <div class="row">
+      <div class="col">
+        <p>Your string reversed is: <span id="result"></span></p>
+        <p id="isPalindrome"></p>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">
@@ -79,6 +114,14 @@
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+  <!-- Custom JS -->
+  <script src="/js/site.js"></script>
+  <script>
+    document
+      .getElementById('tacoBtn')
+      .addEventListener('click', reverseString);
   </script>
 </body>
 
