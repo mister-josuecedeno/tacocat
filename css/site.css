@@ -1,0 +1,121 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px;
+  /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+h1,
+h2,
+h3,
+h4,
+#logo {
+  /* color: #F79326; */
+  color: #f8a704;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body>.container {
+  padding: 60px 15px 0px;
+  /* border: solid; */
+}
+
+.footer>.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.row>div {
+  margin-bottom: 15px;
+}
+
+.content {
+  min-height: 300px;
+  background: #dbdfe5;
+}
+
+.content.bg-alt {
+  background: #b4bac0;
+}
+
+.sidebar-top {
+  min-height: 140px;
+  background: #dbdfe7;
+}
+
+.sidebar-bottom {
+  min-height: 145px;
+  background: #7e8aa0;
+  margin-bottom: -15px;
+}
+
+.sidebar,
+.content {
+  min-height: 300px;
+}
+
+.content-top {
+  min-height: 160px;
+  background: #b4bac0;
+}
+
+.content-bottom {
+  min-height: 125px;
+  background: #7e8aa0;
+  margin-bottom: -15px;
+}
+
+.content-bottom.bg-alt {
+  background: #9ca5b6;
+}
+
+@media (max-width: 991px) {
+  .content-bottom {
+    margin-bottom: 15px;
+  }
+
+  .content-bottom.bg-alt {
+    margin-bottom: -15px;
+  }
+}
+
+.intro {
+  /* background: #7e8aa0; */
+  min-height: 250px;
+}
+
+.section {
+  min-height: 150px;
+  /* background: #dbdfe5; */
+}
+
+.section.bg-alt {
+  /* background: #b4bac0; */
+}
+
+/* Hero Image */
+#hero-image {
+  max-height: 50vh;
+}
