@@ -15,18 +15,11 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
   
-  background-color: #1D976C;
-  
-  /* Mojito */
-  /* background: #1D976C;  
-  background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  
-  background: linear-gradient(to right, #93F9B9, #1D976C);  */
+  /* background-color: #1D976C; */
 
-  /* Lemon Twist */
-  /* background: #3CA55C; 
-  background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C);  
-  background: linear-gradient(to right, #B5AC49, #3CA55C);  */
-
+  background: #FFB75E;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -45,11 +38,40 @@ h1,
 h2,
 h3,
 h4,
-#logo {
+#logo,
+.fab {
   /* color: #F79326; */
   /* color: #F2D22E; */
-  color: #FEC611;
+  /* color: #FEC611; */
+  color: #FFDF2B;
 }
+
+p {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.fab {
+  font-size: 1.5rem;
+}
+
+p .fab {
+  font-size: 2.5rem;
+}
+
+
+
+/* Change size of Bootstrap badge */
+.badge {
+  font-size: 1.125rem;
+}
+
+/* Hero Image */
+#hero-image {
+  max-height: 40vh;
+}
+
+
 
 
 /* Custom page CSS
@@ -138,7 +160,3 @@ code {
   /* background: #b4bac0; */
 }
 
-/* Hero Image */
-#hero-image {
-  max-height: 50vh;
-}

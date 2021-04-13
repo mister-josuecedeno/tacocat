@@ -17,6 +17,9 @@
 
   <!-- Sticky footer CSS -->
   <link rel="stylesheet" href="./css/site.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 
 <body>
@@ -24,7 +27,7 @@
   <header>
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" id="logo" href="#">Coding Challenge</a>
+      <a class="navbar-brand" id="logo" href="index.html">Coding Challenge</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -59,10 +62,10 @@
   </header>
 
   <!-- Begin page content -->
-  <main role="main" class="container">
+  <main role="main" class="container mt-5">
     <div class="row">
       <!-- Image (use same as portfolio image) -->
-      <div class="col" id="hero-image">
+      <div class="col mb-5" id="hero-image">
         <!-- <div class="intro"> -->
         <img class="img-fluid rounded-circle mx-auto d-block mh-100" src="/img/profile-img-square.PNG" alt="">
         <!-- </div> -->
@@ -70,20 +73,25 @@
     </div>
     <div class="row">
       <!-- About Me -->
-      <div class="col-lg-4 col-md-12">
+      <div class="col-lg-12 col-md-12">
         <div class="section">
           <h2>About Josue Cedeno</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem itaque laudantium nihil illo, iusto
-            voluptatem explicabo porro a veritatis hic aut optio iure quia. Maiores.</p>
+          <p>I am a self-motivated problem solver looking to drive technical projects from design, implementation,
+            deployment, and monitoring. In addition to coding, I have 20+ years of analytics, training, and management
+            experience.</p>
+
+          <p>As a Full Stack .Net and React Developer, my goal is to help you and your
+            clients solve problems using code. I am seeking either remote and/or local opportunities. Contract or Full
+            Time.</p>
         </div>
       </div>
 
       <!-- Contact Me -->
-      <div class="col-lg-4 col-md-6">
+      <!-- TODO - add portfolio link -->
+      <div class="col-lg-8 col-md-6">
         <div class="section">
           <h2>Want to Know More?</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptatum animi consectetur esse. Sit
-            velit natus asperiores sunt alias aliquam mollitia adipisci accusamus consequuntur nisi.</p>
+          <p>If you would like to see more of my work, please visit my <a class="badge badge-warning" href="https://josuecedeno.netlify.app/" target="_blank">portfolio site</a>.</p>
         </div>
       </div>
 
@@ -91,15 +99,26 @@
       <div class="col-lg-4 col-md-6">
         <div class="section bg-alt">
           <h2>Contact Me</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit accusantium placeat aliquam fuga id
-            illum, consequatur at. Atque recusandae vero magnam, quam neque exercitationem ratione.</p>
+          <p>Email: josuecedeno@gmail.com</p>
+          <p>Mobile: 917-664-6672</p>
+          
+          <!-- Insert Social Media -->
+          <div class="social-links">
+            <a href="https://twitter.com/josue_cedeno" target="_blank" class="twitter"><i class="fab fa-twitter mr-1"></i></a>
+            <a href="https://www.linkedin.com/in/josuecedeno/" target="_blank" class="linkedin"><i class="fab fa-linkedin-in mr-1"></i></a>
+            <a href="https://github.com/mister-josuecedeno" target="_blank" class='github'><i class="fab fa-github mr-1"></i></a>
+            <a href="https://www.youtube.com/watch?v=7vzmcnrMPVY&list=PLDPmMPOYG6Ui_S6OS0DedzvvfQo3sNU3B" target="_blank"
+              class='youtube'><i class="fab fa-youtube mr-1"></i></i></a>
+          </div>
+
+
         </div>
       </div>
     </div>
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container text-center">
       <span class="text-muted">&copy; Josue Cedeno 2021</span>
     </div>
   </footer>

@@ -21,6 +21,14 @@
       crossorigin="anonymous"
     />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
     <!-- Sticky footer CSS -->
     <link rel="stylesheet" href="./css/site.css" />
   </head>
@@ -29,7 +37,7 @@
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" id="logo" href="#">Coding Challenge</a>
+        <a class="navbar-brand" id="logo" href="index.html">Coding Challenge</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -93,8 +101,8 @@
       </div>
       <div class="row">
         <!-- Code Challenge Intro Text -->
-        <div class="col-lg-4 col-md-12">
-          <div class="section">
+        <div class="col-lg-12 col-md-12">
+          <div class="section border border-warning p-2 rounded shadow-sm">
             <h2>Tacocat</h2>
             <p>
               The Taco Cat coding challenge is based on the more traditional
@@ -110,8 +118,10 @@
         </div>
 
         <!-- Code Challenge - Instructions -->
-        <div class="col-lg-4 col-md-6">
-          <div class="section">
+        <div class="col-lg-8 col-md-6">
+          <div
+            class="section border border-warning p-2 rounded rounded shadow-sm"
+          >
             <h2>Instructions</h2>
             <p>
               Write a program that allows a user to enter in a word or phrase
@@ -125,16 +135,23 @@
 
         <!-- Code Challenge Data -->
         <div class="col-lg-4 col-md-6">
-          <div class="section bg-alt">
+          <div
+            class="section border border-warning p-2 rounded rounded shadow-sm"
+            style="height: 100%"
+          >
             <h2>Technologies Used</h2>
-            <p>HTML, JavaScript, jQuery, CSS, Bootstrap</p>
+            <p>
+              <i class="fab fa-html5"></i> <i class="fab fa-js-square"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-bootstrap"></i>
+            </p>
           </div>
         </div>
       </div>
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="container text-center">
         <span class="text-muted">&copy; Josue Cedeno 2021</span>
       </div>
     </footer>

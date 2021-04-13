@@ -2,31 +2,32 @@ function reverseString() {
   // Get the user's word
   let userWord = document.getElementById('tacoCat').value;
 
+  // Replace anything that is not a character or digit
   const regex = /[^a-z0-9]/gi;
   let cleanedWord = userWord.replace(regex, '').toLowerCase();
 
   let reverseWord = '';
-
-  // Do something here with it
   let start = cleanedWord.length - 1;
 
-  // For Loop
   for (let i = start; i >= 0; i--) {
     reverseWord += cleanedWord[i];
   }
 
-  // Return to screen
+  // Return results
   let output = document.getElementById('result');
-  output.innerText = reverseWord;
+  let msg = `${userWord} reversed (characters only) is: `;
+  output.innerText = msg + reverseWord;
 
   // Is this a palindrome
   let palOutput = document.getElementById('isPalindrome');
-
   let isPalindrome = cleanedWord === reverseWord;
 
+  const winner = '<img src="/img/TACOCAT_WINNER.gif" alt="winner"></img>';
+
+  // Must have 2 or more letters
   if (isPalindrome && cleanedWord.length > 1) {
-    palOutput.innerText = "It's a palindrome!!!";
+    palOutput.innerHTML = `<h3>${userWord} is a palindrome.</h3>${winner}`;
   } else {
-    palOutput.innerText = 'Your string is NOT a palindrome.';
+    palOutput.innerHTML = `<h3>${userWord} is NOT a palindrome.</h3>`;
   }
 }

@@ -17,6 +17,9 @@
 
   <!-- Sticky footer CSS -->
   <link rel="stylesheet" href="./css/site.css">
+
+  <!-- Prism -->
+  <link rel="stylesheet" href="/css/prism-twilight.css">
 </head>
 
 <body>
@@ -24,7 +27,7 @@
   <header>
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" id="logo" href="#">Coding Challenge</a>
+      <a class="navbar-brand" id="logo" href="index.html">Coding Challenge</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -60,12 +63,61 @@
   </header>
 
   <!-- Begin page content -->
-  <main role="main" class="container">
+  <main role="main">
     <!-- Add HTML later -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <h1 class="mt-5">Code Review</h1>
+          <p>Cleaning the String: Using regex and the replace function, non-characters are stripped for comparison</p>
+          <p>Loop: Using the clean version, the for loop starting at the end of the string creates a new string</p>
+          <p>Comparison: Comparing the cleaned version to the reversed string (plus the clean string length) determines if the string provided is a palindrome </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <pre class="line-numbers"><code class="language-javascript">// See The Code
+function reverseString() {
+  // Get the user's word
+  let userWord = document.getElementById('tacoCat').value;
+
+  // Replace anything that is not a character or digit
+  const regex = /[^a-z0-9]/gi;
+  let cleanedWord = userWord.replace(regex, '').toLowerCase();
+
+  let reverseWord = '';
+  let start = cleanedWord.length - 1;
+
+  for (let i = start; i >= 0; i--) {
+    reverseWord += cleanedWord[i];
+  }
+
+  // Return results
+  let output = document.getElementById('result');
+  let msg = `${userWord} reversed (characters only) is: `;
+  output.innerText = msg + reverseWord;
+
+  // Is this a palindrome
+  let palOutput = document.getElementById('isPalindrome');
+  let isPalindrome = cleanedWord === reverseWord;
+
+  const winner = '<img src="/img/TACOCAT_WINNER.gif" alt="winner"></img>';
+
+  // Must have 2 or more letters
+  if (isPalindrome && cleanedWord.length > 1) {
+    palOutput.innerHTML = `<h3>${userWord} is a palindrome.</h3>${winner}`;
+  } else {
+    palOutput.innerHTML = `<h3>${userWord} is NOT a palindrome.</h3>`;
+  }
+}
+          </code></pre>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container text-center">
       <span class="text-muted">&copy; Josue Cedeno 2021</span>
     </div>
   </footer>
@@ -81,6 +133,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+
+  <!-- Prism -->
+  <script src="/js/prism-twilight.js"></script>
 </body>
 
 </html>
