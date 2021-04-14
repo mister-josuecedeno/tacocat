@@ -22,7 +22,8 @@ function reverseString() {
   let palOutput = document.getElementById('isPalindrome');
   let isPalindrome = cleanedWord === reverseWord;
 
-  const winner = '<img src="/img/TACOCAT_WINNER.gif" alt="winner"></img>';
+  const winner =
+    '<img class="img-fluid" src="/img/TACOCAT_WINNER.gif" alt="winner"></img>';
 
   // Must have 2 or more letters
   if (isPalindrome && cleanedWord.length > 1) {
