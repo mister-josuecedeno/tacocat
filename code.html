@@ -101,13 +101,13 @@ function reverseString() {
   let palOutput = document.getElementById('isPalindrome');
   let isPalindrome = cleanedWord === reverseWord;
 
-  const winner = '<img src="/img/TACOCAT_WINNER.gif" alt="winner"></img>';
+  const winner = '&lt;img src="/img/TACOCAT_WINNER.gif" alt="winner"></img>';
 
   // Must have 2 or more letters
   if (isPalindrome && cleanedWord.length > 1) {
-    palOutput.innerHTML = `<h3>${userWord} is a palindrome.</h3>${winner}`;
+    palOutput.innerHTML = `&lt;h3>${userWord} is a palindrome.&lt;/h3>${winner}`;
   } else {
-    palOutput.innerHTML = `<h3>${userWord} is NOT a palindrome.</h3>`;
+    palOutput.innerHTML = `&lt;h3>${userWord} is NOT a palindrome.&lt;/h3>`;
   }
 }
           </code></pre>
